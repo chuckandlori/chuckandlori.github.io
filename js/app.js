@@ -1,7 +1,7 @@
 // Get the new year 
 const getNewYear = () => {
     const currentYear = new Date().getFullYear();
-    return new Date(`April 22 2021 06:00:00`);
+    return new Date(`April 22 2021 00:00:00`);
 };
 
 // update the year element
@@ -14,24 +14,27 @@ const message = document.querySelector('.message');
 const heading = document.querySelector('h1');
 
 
+const format = (t) => {
+    return t < 10 ? '0' + t : t;
+};
 
 const render = (time) => {
     app.innerHTML = `
         <div class="count-down">
             <div class="timer">
-                <h2 class="days">${time.days}</h2>
+                <h2 class="days">${format(time.days)}</h2>
                 <small>Days</small>
             </div>
             <div class="timer">
-                <h2 class="hours">${time.hours}</h2>
+                <h2 class="hours">${format(time.hours)}</h2>
                 <small>Hours</small>
             </div>
             <div class="timer">
-                <h2 class="minutes">${time.minutes}</h2>
+                <h2 class="minutes">${format(time.minutes)}</h2>
                 <small>Minutes</small>
             </div>
             <div class="timer">
-                <h2 class="seconds">${time.seconds}</h2>
+                <h2 class="seconds">${format(time.seconds)}</h2>
                 <small>Seconds</small>
             </div>
         </div>
