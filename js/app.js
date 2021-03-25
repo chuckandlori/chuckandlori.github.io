@@ -43,7 +43,7 @@ const render = (time) => {
 
 
 const showMessage = () => {
-    message.innerHTML = `Happy New Year ${newYear}!`;
+    message.innerHTML = `Chuck and Lori Time ${newYear}!`;
     app.innerHTML = '';
     heading.style.display = 'none';
 };
