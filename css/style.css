@@ -46,6 +46,10 @@ lori{
     color:purple;
 }
 
+opac{
+    opacity: 0.2;
+}
+
 .count-down {
     text-align: center;
     font-size: 40px;
