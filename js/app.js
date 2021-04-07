@@ -6,7 +6,7 @@ const getNewYear = () => {
 
 // update the year element
 const year = document.querySelector('.year');
-year.innerHTML = getNewYear()//.getFullYear();
+year.innerHTML = '04/11/2021'; //getNewYear().getFullYear();
 
 // select elements
 const app = document.querySelector('.countdown-timer');
